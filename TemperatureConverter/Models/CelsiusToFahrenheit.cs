@@ -9,7 +9,10 @@ namespace TemperatureConverter.Models
         public double StillConvertingCelsiusToFahrenheit{ get; set; }
         public double ConvertingCelsiusToFahrenheit{ get; set; }
 
-        private static List<CelsiusToFahrenheit> _fourthInstance;
+        // The sementation fault(or NullRefernece Error that I was having) was really because I did not reinstantiate my CelsiusToFahrenheit() list inside the private list I created(_fourthINstance )
+        // Remember the purpose of the list is to be able to add the 2 values that will be required for a temperature coversion to take place
+        // My big mistake was trying to access an object(CelsiusToFahrenheit) with a list without being properly initialized
+        private static List<CelsiusToFahrenheit> _fourthInstance = new List<CelsiusToFahrenheit>();
         public List<CelsiusToFahrenheit> ForMyListOfCelsiusToFahreheitTemperatures
         {
             get { return _fourthInstance; }
