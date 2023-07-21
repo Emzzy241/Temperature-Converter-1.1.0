@@ -210,7 +210,7 @@ class Program
                         break;
 
                     default:
-                        Console.WriteLine("Sorry I didnt get that");
+                        Console.WriteLine("Sorry I didn't get that");
                         Main();
                         break;
 
@@ -227,7 +227,7 @@ class Program
                     double cel1Result = finalCel1.SecondFahrenheitConverterMethod();
 
                     Console.WriteLine("--------------------------------");
-                    Console.WriteLine($"Your result is {cel1Result}C");
+                    Console.WriteLine($"Your result is {cel1Result}F");
                     Console.WriteLine("--------------------------------");
 
                     Console.WriteLine();
